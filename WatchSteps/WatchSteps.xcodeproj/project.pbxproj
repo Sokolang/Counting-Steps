@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A7CD6A287DE52F002FD207 /* WatchStepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7CD69287DE52F002FD207 /* WatchStepsApp.swift */; };
+		F0A7CD6C287DE52F002FD207 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7CD6B287DE52F002FD207 /* ContentView.swift */; };
+		F0A7CD6E287DE532002FD207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A7CD6D287DE532002FD207 /* Assets.xcassets */; };
+		F0A7CD71287DE532002FD207 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A7CD70287DE532002FD207 /* Preview Assets.xcassets */; };
+		F0A7CD75287DE532002FD207 /* WatchSteps WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F0A7CD74287DE532002FD207 /* WatchSteps WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0A7CD7A287DE534002FD207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A7CD79287DE534002FD207 /* Assets.xcassets */; };
+		F0A7CD80287DE534002FD207 /* WatchSteps WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0A7CD7F287DE534002FD207 /* WatchSteps WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0A7CD85287DE535002FD207 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7CD84287DE534002FD207 /* ContentView.swift */; };
+		F0A7CD87287DE535002FD207 /* WatchStepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7CD86287DE535002FD207 /* WatchStepsApp.swift */; };
+		F0A7CD89287DE535002FD207 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7CD88287DE535002FD207 /* ComplicationController.swift */; };
+		F0A7CD8B287DE537002FD207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A7CD8A287DE537002FD207 /* Assets.xcassets */; };
+		F0A7CD8E287DE537002FD207 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A7CD8D287DE537002FD207 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0A7CD76287DE532002FD207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A7CD5E287DE52F002FD207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A7CD73287DE532002FD207;
+			remoteInfo = "WatchSteps WatchKit App";
+		};
+		F0A7CD81287DE534002FD207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A7CD5E287DE52F002FD207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A7CD7E287DE534002FD207;
+			remoteInfo = "WatchSteps WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0A7CD95287DE537002FD207 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0A7CD80287DE534002FD207 /* WatchSteps WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A7CD99287DE537002FD207 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F0A7CD75287DE532002FD207 /* WatchSteps WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0A7CD66287DE52F002FD207 /* WatchSteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A7CD69287DE52F002FD207 /* WatchStepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStepsApp.swift; sourceTree = "<group>"; };
+		F0A7CD6B287DE52F002FD207 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0A7CD6D287DE532002FD207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A7CD70287DE532002FD207 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0A7CD74287DE532002FD207 /* WatchSteps WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchSteps WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A7CD79287DE534002FD207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A7CD7F287DE534002FD207 /* WatchSteps WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchSteps WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A7CD84287DE534002FD207 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0A7CD86287DE535002FD207 /* WatchStepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStepsApp.swift; sourceTree = "<group>"; };
+		F0A7CD88287DE535002FD207 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F0A7CD8A287DE537002FD207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A7CD8D287DE537002FD207 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0A7CD8F287DE537002FD207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A7CD63287DE52F002FD207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A7CD7C287DE534002FD207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A7CD5D287DE52F002FD207 = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD68287DE52F002FD207 /* WatchSteps */,
+				F0A7CD78287DE532002FD207 /* WatchSteps WatchKit App */,
+				F0A7CD83287DE534002FD207 /* WatchSteps WatchKit Extension */,
+				F0A7CD67287DE52F002FD207 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A7CD67287DE52F002FD207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD66287DE52F002FD207 /* WatchSteps.app */,
+				F0A7CD74287DE532002FD207 /* WatchSteps WatchKit App.app */,
+				F0A7CD7F287DE534002FD207 /* WatchSteps WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A7CD68287DE52F002FD207 /* WatchSteps */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD69287DE52F002FD207 /* WatchStepsApp.swift */,
+				F0A7CD6B287DE52F002FD207 /* ContentView.swift */,
+				F0A7CD6D287DE532002FD207 /* Assets.xcassets */,
+				F0A7CD6F287DE532002FD207 /* Preview Content */,
+			);
+			path = WatchSteps;
+			sourceTree = "<group>";
+		};
+		F0A7CD6F287DE532002FD207 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD70287DE532002FD207 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0A7CD78287DE532002FD207 /* WatchSteps WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD79287DE534002FD207 /* Assets.xcassets */,
+			);
+			path = "WatchSteps WatchKit App";
+			sourceTree = "<group>";
+		};
+		F0A7CD83287DE534002FD207 /* WatchSteps WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD84287DE534002FD207 /* ContentView.swift */,
+				F0A7CD86287DE535002FD207 /* WatchStepsApp.swift */,
+				F0A7CD88287DE535002FD207 /* ComplicationController.swift */,
+				F0A7CD8A287DE537002FD207 /* Assets.xcassets */,
+				F0A7CD8F287DE537002FD207 /* Info.plist */,
+				F0A7CD8C287DE537002FD207 /* Preview Content */,
+			);
+			path = "WatchSteps WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F0A7CD8C287DE537002FD207 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7CD8D287DE537002FD207 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A7CD65287DE52F002FD207 /* WatchSteps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A7CD9A287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps" */;
+			buildPhases = (
+				F0A7CD62287DE52F002FD207 /* Sources */,
+				F0A7CD63287DE52F002FD207 /* Frameworks */,
+				F0A7CD64287DE52F002FD207 /* Resources */,
+				F0A7CD99287DE537002FD207 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A7CD77287DE532002FD207 /* PBXTargetDependency */,
+			);
+			name = WatchSteps;
+			productName = WatchSteps;
+			productReference = F0A7CD66287DE52F002FD207 /* WatchSteps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0A7CD73287DE532002FD207 /* WatchSteps WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A7CD96287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps WatchKit App" */;
+			buildPhases = (
+				F0A7CD72287DE532002FD207 /* Resources */,
+				F0A7CD95287DE537002FD207 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A7CD82287DE534002FD207 /* PBXTargetDependency */,
+			);
+			name = "WatchSteps WatchKit App";
+			productName = "WatchSteps WatchKit App";
+			productReference = F0A7CD74287DE532002FD207 /* WatchSteps WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F0A7CD7E287DE534002FD207 /* WatchSteps WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A7CD92287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps WatchKit Extension" */;
+			buildPhases = (
+				F0A7CD7B287DE534002FD207 /* Sources */,
+				F0A7CD7C287DE534002FD207 /* Frameworks */,
+				F0A7CD7D287DE534002FD207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchSteps WatchKit Extension";
+			productName = "WatchSteps WatchKit Extension";
+			productReference = F0A7CD7F287DE534002FD207 /* WatchSteps WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A7CD5E287DE52F002FD207 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F0A7CD65287DE52F002FD207 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F0A7CD73287DE532002FD207 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F0A7CD7E287DE534002FD207 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F0A7CD61287DE52F002FD207 /* Build configuration list for PBXProject "WatchSteps" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0A7CD5D287DE52F002FD207;
+			productRefGroup = F0A7CD67287DE52F002FD207 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A7CD65287DE52F002FD207 /* WatchSteps */,
+				F0A7CD73287DE532002FD207 /* WatchSteps WatchKit App */,
+				F0A7CD7E287DE534002FD207 /* WatchSteps WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A7CD64287DE52F002FD207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7CD71287DE532002FD207 /* Preview Assets.xcassets in Resources */,
+				F0A7CD6E287DE532002FD207 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A7CD72287DE532002FD207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7CD7A287DE534002FD207 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A7CD7D287DE534002FD207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7CD8E287DE537002FD207 /* Preview Assets.xcassets in Resources */,
+				F0A7CD8B287DE537002FD207 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A7CD62287DE52F002FD207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7CD6C287DE52F002FD207 /* ContentView.swift in Sources */,
+				F0A7CD6A287DE52F002FD207 /* WatchStepsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A7CD7B287DE534002FD207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A7CD85287DE535002FD207 /* ContentView.swift in Sources */,
+				F0A7CD87287DE535002FD207 /* WatchStepsApp.swift in Sources */,
+				F0A7CD89287DE535002FD207 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0A7CD77287DE532002FD207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A7CD73287DE532002FD207 /* WatchSteps WatchKit App */;
+			targetProxy = F0A7CD76287DE532002FD207 /* PBXContainerItemProxy */;
+		};
+		F0A7CD82287DE534002FD207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A7CD7E287DE534002FD207 /* WatchSteps WatchKit Extension */;
+			targetProxy = F0A7CD81287DE534002FD207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F0A7CD90287DE537002FD207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0A7CD91287DE537002FD207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F0A7CD93287DE537002FD207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchSteps WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchSteps WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchSteps WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		F0A7CD94287DE537002FD207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchSteps WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchSteps WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchSteps WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		F0A7CD97287DE537002FD207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchSteps_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchSteps WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sokolang.WatchSteps;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		F0A7CD98287DE537002FD207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchSteps_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchSteps WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sokolang.WatchSteps;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		F0A7CD9B287DE537002FD207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchSteps/Preview Content\"";
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0A7CD9C287DE537002FD207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchSteps/Preview Content\"";
+				DEVELOPMENT_TEAM = FF78UH6P5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sokolang.WatchSteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A7CD61287DE52F002FD207 /* Build configuration list for PBXProject "WatchSteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A7CD90287DE537002FD207 /* Debug */,
+				F0A7CD91287DE537002FD207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A7CD92287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A7CD93287DE537002FD207 /* Debug */,
+				F0A7CD94287DE537002FD207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A7CD96287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A7CD97287DE537002FD207 /* Debug */,
+				F0A7CD98287DE537002FD207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A7CD9A287DE537002FD207 /* Build configuration list for PBXNativeTarget "WatchSteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A7CD9B287DE537002FD207 /* Debug */,
+				F0A7CD9C287DE537002FD207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A7CD5E287DE52F002FD207 /* Project object */;
+}
